@@ -1,9 +1,13 @@
-﻿using System.Text;
+﻿using System.Data.SqlTypes;
+using System.Text;
 
 namespace LeetCode.Problems.HashTable
 {
     public partial class Solution
     {
+        // 3. Longest Substring Without Repeating Characters
+        // find the length of the longest substring without repeating characters.
+
         public static int LengthOfLongestSubstring(string s)
         {
             int result = 0;
