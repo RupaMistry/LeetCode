@@ -18,4 +18,4 @@ Solution.FindSpecialInteger(new int[] { 1, 2, 2, 6, 6, 6, 6, 7, 10 });
 
 Solution.CountCharacters(new string[] { "cat", "bt", "hat", "tree" }, "atach");
 
-Solution.ArrayStringsAreEqual(new string[] { "ab", "c" }, new string[] { "a", "bc" });
+///Solution.ArrayStringsAreEqual(new string[] { "ab", "c" }, new string[] { "a", "bc" });
