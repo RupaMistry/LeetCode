@@ -14,4 +14,5 @@ function maxSubArray(nums: number[]): number {
         }
     }
 
-    return maxGlobal
+    return maxGlobal;
+}
