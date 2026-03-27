@@ -1,0 +1,36 @@
+function search(nums: number[], target: number): boolean {
+    let left = 0;
+    let right = nums.length - 1;
+
+    while (left <= right) {
+        let mid = Math.floor(left + (right - left) / 2);
+
+        if (nums[mid] === target) return true;
+
+        // Edge case: cannot determine which side is sorted
+        if (nums[left] === nums[mid] && nums[mid] === nums[right]) {
+            left++;
+            right--;
+            continue;
+        }
+
+        // Left side is sorted
+        if (nums[left] <= nums[mid]) {
+            if (nums[left] <= target && target < nums[mid]) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        // Right side is sorted
+        else {
+            if (nums[mid] < target && target <= nums[right]) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+    }
+
+    return false;
+}
