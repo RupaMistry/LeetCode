@@ -1,9 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using LeetCode.Problems.HashTable;
 
-Solution.FourSum(new[] { 1, 0, -1, 0, -2, 2 }, 0);
-
-Solution.RemoveDuplicates(new[] { 1, 1, 2 });
 
 Solution.ContainsDuplicate(new[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 });
 
